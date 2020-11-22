@@ -15,7 +15,7 @@ All_offer = []
 All_des = []
 
 
-conn = sq.connect('m.db')
+conn = sq.connect('all3.db')
 c = conn.cursor()
 # DOT STRINGS
 
@@ -24,7 +24,7 @@ CREATE TABLE medicine(
     medi_link text,medi_name text,medi_company text,medi_rprice text,medi_oprice text,medi_offer text,medi_img text,medi_des text
 )
 """)
-for i in range(1,50):
+for i in range(1140,2000):
     tab=''
     tabCom=''
     tabRp=''
