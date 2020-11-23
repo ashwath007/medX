@@ -15,7 +15,7 @@ All_offer = []
 All_des = []
 
 
-conn = sq.connect('all3.db')
+conn = sq.connect('./Data/all15.db')
 c = conn.cursor()
 # DOT STRINGS
 
@@ -24,7 +24,7 @@ CREATE TABLE medicine(
     medi_link text,medi_name text,medi_company text,medi_rprice text,medi_oprice text,medi_offer text,medi_img text,medi_des text
 )
 """)
-for i in range(1140,2000):
+for i in range(7000,8000):
     tab=''
     tabCom=''
     tabRp=''
@@ -80,7 +80,7 @@ for i in range(1140,2000):
 
 
 
-print(All_lists)
+# print(All_lists)
 # tup = (Tab[0].text,TabCompany[0].text,TabPrice[0].text,TabRealPrice[0].text,TabOffer[0].text,MedDescription[0].text)
 # c.execute("INSERT INTO medicine VALUES (?,?,?,?,?,?)",(Tab[0].text,TabCompany[0].text,TabRealPrice[0].text,TabPrice[0].text,TabOffer[0].text,MedDescription[0].text))
 
